@@ -6,8 +6,6 @@ A Strapi plugin for uploading files to Cloudflare R2.
 
 ## Installation
 
-Install strapi-provider-upload-r2 with npm
-
 ```bash
 npm i strapi-provider-upload-r2
 ```
