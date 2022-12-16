@@ -1,0 +1,22 @@
+{
+  "name": "strapi-provider-upload-r2",
+  "version": "1.0.0",
+  "description": "Plugin to upload Strapi media files to Cloudflare R2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becem-gharbi/strapi-upload-r2.git"
+  },
+  "author": "Becem Gharbi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/becem-gharbi/strapi-upload-r2/issues"
+  },
+  "homepage": "https://github.com/becem-gharbi/strapi-upload-r2#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.231.0"
+  }
+}
