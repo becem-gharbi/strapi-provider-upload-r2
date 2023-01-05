@@ -1,22 +1,46 @@
 {
-  "name": "strapi-provider-upload-r2",
-  "version": "1.0.2",
+  "name": "@bg-dev/strapi-provider-upload-r2",
+  "version": "0.0.0-development",
   "description": "Plugin to upload Strapi media files to Cloudflare R2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/becem-gharbi/strapi-provider-upload-r2.git"
+    "url": "https://github.com/becem-gharbi/strapi-provider-upload-r2.git"
   },
   "author": "Becem Gharbi",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/becem-gharbi/strapi-provider-upload-r2/issues"
   },
   "homepage": "https://github.com/becem-gharbi/strapi-provider-upload-r2#readme",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.231.0"
+  },
+  "keywords": [
+    "Strapi",
+    "upload",
+    "Cloudflare"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^19.0.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
