@@ -7,7 +7,7 @@ A Strapi plugin for uploading files to Cloudflare R2.
 ## Installation
 
 ```bash
-npm i strapi-provider-upload-r2
+npm i @bg-dev/strapi-provider-upload-r2
 ```
     
 ## Environment Variables
@@ -34,7 +34,7 @@ module.exports = ({ env }) => ({
   // ...
   upload: {
     config: {
-      provider: "strapi-provider-upload-r2",
+      provider: "@bg-dev/strapi-provider-upload-r2",
       providerOptions: {
         accessKeyId: env("R2_ACCESS_KEY_ID"),
         secretAccessKey: env("R2_SECRET_ACCESS_KEY"),
