@@ -1,15 +1,13 @@
-
 # Strapi Provider Upload R2
 
-A Strapi plugin for uploading files to Cloudflare R2.
-
+A Strapi plugin for uploading files to Cloudflare R2
 
 ## Installation
 
 ```bash
 npm i @bg-dev/strapi-provider-upload-r2
 ```
-    
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
@@ -23,7 +21,6 @@ To run this project, you will need to add the following environment variables to
 `R2_BUCKET`
 
 `R2_PUBLIC_URL`
-
 
 ## Setup
 
@@ -45,12 +42,14 @@ module.exports = ({ env }) => ({
     },
   },
   // ...
-})
+});
 ```
 
 ### config/middlewares
+
 ```javascript
- // ...
+module.exports = ({ env }) => [
+  // ...
   {
     name: "strapi::security",
     config: {
@@ -78,9 +77,8 @@ module.exports = ({ env }) => ({
     },
   },
   // ...
+];
 ```
-
-
 
 ## Appendix
 
